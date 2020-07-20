@@ -18,6 +18,7 @@ app.post("/", (req, res) => {
   console.log(req.body);
 });
 
+
 reload(app).then(function (reloadReturned){
   app.listen(3000, () => {
     console.log("Newsletter app is running at port 3000");
